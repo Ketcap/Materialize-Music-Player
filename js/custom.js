@@ -12,7 +12,17 @@ var song = new Audio();
   $('.songPlay').on("click",function(){
     $('.collection-item[status=playing]').attr('status','stopped')
     var _this = $(this);
-    _this.parents('.collection-item').attr('status','playing');
+    parent = _this.parents('.collection-item');
+    parent.attr('status','playing');
+
+    $('.collection-item').not(parent).css({
+      "background-color":'#fff',
+      'color':'#000',
+    })
+    parent.css({
+      'background-color':'#82b1ff',
+      'color':'#fff',
+    })
 
     if(_this.attr('state') == 'stop' || typeof _this.attr('state') === 'undefined' ){
 
