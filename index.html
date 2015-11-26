@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <!--Import Google Icon Font-->
+     <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/icon.css"  media="screen,projection"/>
+
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <body class='blue-grey lighten-5'>
+
+<div class="row container">
+  <div class="col s12">
+
+    <div id="cover" class="col s6 covers z-depth-1"
+      style="background-image:url(images/covers/prism.jpg)">
+    </div><!-- Covers Ends -->
+
+    <div class="col s6 player z-depth-2 no-padding blue-grey lighten-5">
+        <div class="musicplayer col s12 blue accent-1 z-depth-2 ">
+          <span class="right share">Share</span>
+
+          <div class="col s12">
+            <span class="title"></span>
+            <span class="right duration"></span>
+            <input type="range" id="duration" min="0" value="0" />
+            <span class="left current"></span>
+            </form>
+          </div>
+          <div class="col s12 controls">
+            <i id="shuffle" class="material-icons">shuffle</i>
+            <i id="repeat" class="material-icons">repeat</i>
+            <i id="prev" class="material-icons">skip_previous</i>
+            <i id="play" class="material-icons">play_circle_outline</i>
+            <i id="next" class="material-icons">skip_next</i>
+            <i id="volume" class="material-icons">volume_up</i>
+            <i id="fav" class="material-icons">favorite</i>
+          </div>
+        </div>
+        <div class="playlist col s12 no-padding">
+          <ul class="collection with-header grey lighten-4">
+            <li class="collection-header"><h5>Playlist</h5></li>
+            <li class="collection-item"><div>Dark Horse Katy Perry ft Juicy J <a href="#!" class='secondary-content'><i class="material-icons songPlay" data-link="Katy_Perry-Dark_Horse_feat-Juicy-J.mp3" data-name='Dark Horse Katy Perry ft Juicy J' cover="prism.jpg">play_arrow</i></a></div></li>
+            <li class="collection-item"><div>Juicy Wiggle Redfoo <a href="#!" class="secondary-content"><i class="material-icons songPlay" data-link="Redfoo-Juicy_Wiggle.mp3" data-name='Juicy Wiggle Redfoo' cover="juicy.jpg">play_arrow</i></a></div></li>
+            <li class="collection-item"><div>Lean On Major Lazer <a href="#!" class="secondary-content"><i class="material-icons songPlay" data-link="Major-Lazer-Lean-On-ft-DJ-Snake.mp3" data-name='Lean On Major Lazer' cover="leanon.jpg">play_arrow</i></a></div></li>
+            <li class="collection-item"><div>The White Buffalo House Of The Rising Sun <a href="#!" class="secondary-content"><i class="material-icons songPlay" data-link="The-white-buffalo.mp3" data-name='The White Buffalo House Of The Rising Sun' cover="thewhitebuffalo.jpg">play_arrow</i></a></div></li>
+
+          </ul>
+        </div>
+    </div><!-- Player Ends -->
+
+
+
+
+  </div><!-- COL S12 Ends -->
+</div><!-- Container Ends  -->
+
+
+
+
+
+
+
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/custom.js"></script>
+
+   </body>
+ </html>
